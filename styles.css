@@ -1,5 +1,6 @@
 body{
     background-color:rgb(168, 228, 173);
+    /* background-color: rgb(6, 104, 57); */
 
 }
 .card{
@@ -84,4 +85,6 @@ img{
 }
 .result{
     display: none;
+    text-align: center;
+    font-weight: 700;
 }
