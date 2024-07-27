@@ -1,15 +1,35 @@
-const input = document.getElementById("text-input");
-const button = document.getElementById("check-btn");
-let res="";
-function checkpalindrome(event){
-    event.preventDefault();
-    const s=input.value;
-    if(s.length==0){
-        alert("Please enter a valid string");
+const input=document.getElementById("strinp");
+const button=document.getElementById("check-btn");
+const res=document.getElementById("result");
+function check(){
+    if(input.value.length==0){
+        alert("Invalid Input");
         return;
     }
-    if(s.length==1){
-        res+=" is a palindrome.";
+    else if(input.value.length==1){
+        res.innerHTML+=`${input.value} is a palindrome`;
+        res.style.display="block";
+        return;
     }
+    else{
+        let j=input.value.length-1;
+        for(let i=0;i<input.value.length;i++,j--){
+            if(input.value[i]===' '){
+                continue;
+            }
+            if(input.value[i]!==input.value[j]){
+                res.innerHTML+=`${input.value} is not a palindrome`;
+                res.style.display="block";
+                return;
+            }
+        }
+        res.innerHTML+=`${input.value} is a palindrome`;
+                res.style.display="block";
+    }
+    
 }
-button.addEventListener("submit",checkpalindrome);
+function clear_input(){
+    res.innerHTML=" ";
+}
+button.addEventListener("click",clear_input);
+button.addEventListener("click",check);
