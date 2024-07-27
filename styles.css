@@ -1,38 +1,84 @@
 body{
-    background-color: white;
+    background-color:rgb(168, 228, 173);
 
 }
 .card{
-    width: 90vw;
+    width: max-content;
     height: max-content;
     padding: 20px;
     text-wrap: wrap;
-    color:white;
-    border: 1px solid black;
+    color:rgb(43, 59, 43);
+    /* border: 1px solid black; */
     border-radius: 10px;
-    background-color: rgb(24, 26, 27);
+    /* background-color: rgb(40, 44, 52); */
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 }
 div>h1{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
 }
 div>h3{
     font-family: Arial, Helvetica, sans-serif;
     color:black;
+    font-size: 150%;
 }
 .input-string{
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
-    border-bottom: 4px solid red ;
+    border-bottom: 2px solid red;
+    border-left: none;
+    border-right:none;
+    border-top:none;
+    /* height: 20px; */
+    padding: 5px;
+    text-align: center;
 }
 .input{
     /* border:2px solid; */
     background-color: aliceblue;
     padding:20px;
-    width: max-content;
+    /* width: 80%; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-radius: 10px;
-    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.action{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    padding: 8px;
+    color:white;
+    background-color: rgb(27, 151, 243);
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    
+}
+.desc{
+    color:rgb(43, 59, 43);
+    border:1px solid white;
+    text-wrap: wrap;
+    margin-top:5vh;
+    padding: 8px;
+    text-align: center;
+    text-wrap: wrap;
+    width: 30%;
+    margin-right: auto;
+    margin-left:  auto;
+    border-radius: 10px;
+}
+.desc>h3{
+    color:white;
+}
+
+img{
+    width: 2rem;
+    height: 2rem;
 }
